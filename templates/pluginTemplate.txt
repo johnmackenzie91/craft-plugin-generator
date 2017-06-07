@@ -1,0 +1,41 @@
+<?php 
+namespace Craft;
+class {$pluginNameUpperNoSpaces}Plugin extends BasePlugin {
+
+    public function getName()
+    {
+         return Craft::t('{$pluginNameUpper}');
+    }
+
+    public function getVersion()
+    {
+        return '1.0';
+    }
+
+    public function getDeveloper()
+    {
+        return 'YOUR NAME HERE';
+    }
+
+    public function getDeveloperUrl()
+    {
+     return 'YOUR WEBSITE HERE';
+    }
+    public function hasCpSection()
+    {
+        return true;
+    }
+    protected function defineSettings()
+    {
+     return array(
+         'cocktailCategories' => array(AttributeType::Mixed, 'default' => array('Sours', 'Fizzes', 'Juleps')),
+         'toEmail' => AttributeType::String
+      );
+    }
+   public function getSettingsHtml()
+    {
+       return craft()->templates->render('{$pluginNameLower}/settings', array(
+           'settings' => $this->getSettings()
+       ));
+   }
+};

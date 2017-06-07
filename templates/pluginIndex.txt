@@ -1,0 +1,5 @@
+{% extends "_layouts\cp" %}
+{% set title = "{$pluginName}"|t %}
+{% set content %}
+	<p>Index</p>
+{% endset %}

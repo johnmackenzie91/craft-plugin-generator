@@ -1,0 +1,12 @@
+{
+    "name": "johnmackenzie91/craft-plugin-generator",
+    "description": "Boilerplate generator for craft cms plugins",
+    "authors": [
+        {
+            "name": "John Mackenzie",
+            "email": "johnmackenziewebdeveloper@gmail.co.uk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
