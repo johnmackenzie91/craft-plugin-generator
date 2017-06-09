@@ -62,7 +62,7 @@ function generateSettingsTemplate() {
  * @return [type] [description]
  */
 function generatePluginContent($argv1) {
-	$pluginTemplate = file_get_contents('templates/pluginTemplate.txt');
+	$pluginTemplate = file_get_contents('../templates/pluginTemplate.txt');
 	$pluginTemplate = str_replace('{$pluginNameUpperNoSpaces}', upperNoSpaces($argv1), $pluginTemplate);
 	$pluginTemplate = str_replace('{$pluginNameUpper}', upper($argv1), $pluginTemplate);
 	$pluginTemplate = str_replace('{$pluginNameLower}', lowerNoSpaces($argv1), $pluginTemplate);
