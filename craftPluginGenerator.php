@@ -8,7 +8,7 @@ if (count($argv) > 1) {
 	$pluginName = lowerNoSpaces($argv[1]);
 
 	if(!isCraftDirectory()){
-		echo 'Please put script in root of craft site.';exit;
+		echo 'Unable to find "craft/plugins". Please caft site.';exit;
 	}
 
 	//Does the directory already exist
