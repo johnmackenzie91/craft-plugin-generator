@@ -7,7 +7,7 @@
             "email": "johnmackenziewebdeveloper@gmail.co.uk"
         }
     ],
-    "bin": ["bin/craftPluginGenerator.php"],
+    "bin": ["bin/craftPluginGenerator"],
     "minimum-stability": "stable",
     "require": {}
 }
