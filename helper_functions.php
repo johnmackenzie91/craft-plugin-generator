@@ -53,7 +53,7 @@ function camelCase($str, array $noStrip = []) {
  * @return [type] [description]
  */
 function generateSettingsTemplate() {
-	$settingsTemplate = file_get_contents('templates/settingsTemplate.txt');
+	$settingsTemplate = file_get_contents('../templates/settingsTemplate.txt');
 	return $settingsTemplate;
 }
 
@@ -74,7 +74,7 @@ function generatePluginContent($argv1) {
  * @return [type] [description]
  */
 function generateControllerContent($argv1) {
-	$controllerTemplate = file_get_contents('templates/controllerTemplate.txt');
+	$controllerTemplate = file_get_contents('../templates/controllerTemplate.txt');
 	$controllerTemplate = str_replace('{$controllerClassName}', upperNoSpaces($argv1), $controllerTemplate);
 	return $controllerTemplate;
 }
@@ -84,7 +84,7 @@ function generateControllerContent($argv1) {
  * @return [type] [description]
  */
 function generateTemplateIndex($argv1) {
-	$pluginIndex = file_get_contents('templates/pluginIndex.txt');
+	$pluginIndex = file_get_contents('../templates/pluginIndex.txt');
 	$pluginIndex = str_replace('{$pluginName}', upper($argv1), $pluginIndex);
 	return  $pluginIndex;
 }
