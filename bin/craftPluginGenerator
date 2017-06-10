@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-include_once '../helper_functions.php';
+include_once __DIR__ . '/../helper_functions.php';
 
 if (count($argv) > 1) {
 
