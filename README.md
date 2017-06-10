@@ -2,4 +2,9 @@
 
 A helpful script to generate typical Craft CMS plugin boilerplate, this creates, the main plugin file, one controller, and the assets file.
 
-To get started place these files into your project root, besides your public and craft files, and run php craftPluginGenerator.php plugin-name-separated-by-dashes
+To get started run;
+
+composer global require johnmackenzie91/craft-plugin-generator
+
+Then navigate to your craft site root ( directory with craft, public ) and run craftPluginGenerator plugin-name-words-seperated-by-dashes
+
