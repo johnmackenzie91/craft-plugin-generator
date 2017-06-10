@@ -4,7 +4,7 @@ A helpful script to generate typical Craft CMS plugin boilerplate, this creates,
 
 To get started run;
 
-composer global require johnmackenzie91/craft-plugin-generator
+`composer global require johnmackenzie91/craft-plugin-generator`
 
 Then navigate to your craft site root ( directory with craft, public ) and run craftPluginGenerator plugin-name-words-seperated-by-dashes
 
