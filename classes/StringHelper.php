@@ -12,6 +12,7 @@ class StringHelper {
 	public static function lowerNoSpaces($str) {
 		$str = strtolower($str);
 		$str = str_replace('-', '', $str);
+        $str = str_replace(' ', '', $str);
 		return $str;
 	}
 
@@ -22,6 +23,7 @@ class StringHelper {
      */
 	public static function upper($str) {
 		$str = str_replace('-', ' ', $str);
+        $str = strtolower($str);
 		$str = ucwords($str);
 		return $str;
 	}
@@ -33,6 +35,7 @@ class StringHelper {
      */
 	public static function upperNoSpaces($str) {
 		$str = str_replace('-', ' ', $str);
+        $str = strtolower($str);
 		$str = ucwords($str);
 		$str = str_replace(' ', '', $str);
 		return $str;
@@ -48,6 +51,7 @@ class StringHelper {
 	        // non-alpha and non-numeric characters become spaces
 	        $str = preg_replace('/[^a-z0-9' . implode("", $noStrip) . ']+/i', ' ', $str);
 	        $str = trim($str);
+            $str = strtolower($str);
 	        // uppercase the first character of each word
 	        $str = ucwords($str);
 	        $str = str_replace(" ", "", $str);

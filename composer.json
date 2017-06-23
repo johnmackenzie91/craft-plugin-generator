@@ -11,6 +11,7 @@
     "minimum-stability": "stable",
     "require": {
         "symfony/console": "^3.3",
-        "phpunit/phpunit": "^6.1"
+        "phpunit/phpunit": "^6.1",
+	"phpunit/phpunit": "5.4.*"
     }
 }

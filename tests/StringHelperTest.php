@@ -1,4 +1,5 @@
 <?php
+require_once('classes/StringHelper.php');
 use PHPUnit\Framework\TestCase;
 use CraftPluginGenerator\Classes\StringHelper;
 
@@ -19,14 +20,14 @@ class StringHelperTest extends TestCase
     public function testUpper()
     {
         $output = StringHelper::upper('TeST StRing');
-        $this->assertEquals($output, 'TEST STRING');
+        $this->assertEquals($output, 'Test String');
     }
 
 
-    public static function testUpperNoSpaces()
+    public function testUpperNoSpaces()
     {
         $output = StringHelper::upperNoSpaces('TeST StRing');
-        $this->assertEquals($output, 'TESTSTRING');
+        $this->assertEquals($output, 'TestString');
     }
 
     /**
@@ -37,7 +38,7 @@ class StringHelperTest extends TestCase
      */
     public function testCamelCase()
     {
-        $output = StringHelper::upperNoSpaces('TeST StRing');
+        $output = StringHelper::camelCase('TeST StRing');
         $this->assertEquals($output, 'testString');
     }
 
@@ -49,7 +50,7 @@ class StringHelperTest extends TestCase
      */
     public function testStringReplaceArray()
     {
-        $output = StringHelper::sringReplaceArray(['hello' => 'hola', 'world' => 'mundo'], 'hello world');
+        $output = StringHelper::stringReplaceArray(['hello' => 'hola', 'world' => 'mundo'], 'hello world');
         $this->assertEquals($output, 'hola mundo');
     }
 
