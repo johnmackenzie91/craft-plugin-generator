@@ -8,3 +8,9 @@ if (file_exists(__DIR__.'/../../../autoload.php')) {
 } else {
     throw new Exception('Unable to find vendor directory for Craft Plugin Generator');
 }
+
+use Johnmackenzie91\CraftPluginGenerator\Commands\Hello;
+
+$app = new Symfony\Component\Console\Application('Craft Plugin Generator', '1.0.0');
+$app->add(new Hello());
+$app->run();
