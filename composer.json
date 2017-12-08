@@ -8,12 +8,6 @@
         }
     ],
     "bin": ["bin/craftPluginGenerator"],
-    "autoload": {
-        "psr-4": {
-//            "Johnmackenzie91\\CraftPluginGenerator\\Helpers\\": "src/classes/helpers/",
-//            "Johnmackenzie91\\CraftPluginGenerator\\Commands\\": "src/commands/"
-        }
-    },
     "minimum-stability": "stable",
     "require": {
         "symfony/console": "^3.3"
