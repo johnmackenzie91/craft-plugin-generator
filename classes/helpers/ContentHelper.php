@@ -9,7 +9,7 @@ class ContentHelper {
      */
     public static function generateSettingsTemplate()
     {
-        $settingsTemplate = file_get_contents( __DIR__ .'/../templates/settingsTemplate.txt');
+        $settingsTemplate = file_get_contents(__DIR__ . '/../templates/settingsTemplate.txt');
         return $settingsTemplate;
     }
 
@@ -19,7 +19,7 @@ class ContentHelper {
      */
     public static function generatePluginContent($inputName)
     {
-        $pluginTemplate = file_get_contents( __DIR__ .'/../templates/pluginTemplate.txt');
+        $pluginTemplate = file_get_contents(__DIR__ . '/../templates/pluginTemplate.txt');
 
         return StringHelper::stringReplaceArray(
             ['{$pluginNameUpperNoSpaces}' => StringHelper::upperNoSpaces($inputName),
@@ -35,7 +35,7 @@ class ContentHelper {
      */
     public static function generateControllerContent($inputName)
     {
-        $controllerTemplate = file_get_contents( __DIR__ .'/../templates/controllerTemplate.txt');
+        $controllerTemplate = file_get_contents(__DIR__ . '/../templates/controllerTemplate.txt');
         $controllerTemplate = str_replace('{$controllerClassName}', StringHelper::upperNoSpaces($inputName), $controllerTemplate);
         return $controllerTemplate;
     }
@@ -46,7 +46,7 @@ class ContentHelper {
      */
     public static function generateTemplateIndex($inputName)
     {
-        $pluginIndex = file_get_contents( __DIR__ .'/../templates/pluginIndex.txt');
+        $pluginIndex = file_get_contents(__DIR__ . '/../templates/pluginIndex.txt');
         $pluginIndex = str_replace('{$pluginName}', StringHelper::upper($inputName), $pluginIndex);
         return  $pluginIndex;
     }

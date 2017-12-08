@@ -11,5 +11,6 @@ if (file_exists(__DIR__.'/../../autoload.php')) {
 
 
 $app = new Symfony\Component\Console\Application('Craft Plugin Generator', '1.0.0');
+dd('aa');
 $app->add(new johnmackenzie91\craftPluginGenerator\Commands\MakePlugin());
 $app->run();

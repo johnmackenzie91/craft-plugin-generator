@@ -1,7 +1,6 @@
 <?php
 
-// src/AppBundle/Command/CreateUserCommand.php
-namespace craftPluginGenerator\Commands;
+namespace johnmackenzie91\craftPluginGenerator\Commands;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
