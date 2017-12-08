@@ -8,10 +8,17 @@
         }
     ],
     "bin": ["bin/craftPluginGenerator"],
+    "autoload": {
+        "psr-4": {
+            "//johnmackenzie91//craftPluginGenerator//Helpers//": "src/Classes/Helpers",
+            "//johnmackenzie91//craftPluginGenerator//Commands//": "src/Commands"
+        }
+    },
     "minimum-stability": "stable",
     "require": {
-        "symfony/console": "^3.3",
-        "phpunit/phpunit": "^6.1",
-	"phpunit/phpunit": "5.4.*"
+        "symfony/console": "^3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.1"
     }
 }
