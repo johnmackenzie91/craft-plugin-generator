@@ -1,0 +1,20 @@
+<?php
+namespace Craft;
+
+/**
+ * Contact Form controller
+ */
+class {$controllerClassName}Controller extends BaseController
+{
+	/**
+	 * @var Allows anonymous access to this controller's actions.
+	 * @access protected
+	 */
+	protected $allowAnonymous = true;
+
+	public function actionRouteOne()
+	{
+
+	}
+
+}
