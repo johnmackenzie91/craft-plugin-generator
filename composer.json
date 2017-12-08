@@ -10,8 +10,8 @@
     "bin": ["bin/craftPluginGenerator"],
     "autoload": {
         "psr-4": {
-            "//johnmackenzie91//craftPluginGenerator//Helpers//": "src/Classes/Helpers",
-            "//johnmackenzie91//craftPluginGenerator//Commands//": "src/Commands"
+            "johnmackenzie91\\craftPluginGenerator\\Helpers\\": "src/Classes/Helpers",
+            "johnmackenzie91\\craftPluginGenerator\\Commands\\": "src/Commands"
         }
     },
     "minimum-stability": "stable",
